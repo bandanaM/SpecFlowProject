@@ -17,8 +17,7 @@ namespace SpecFlowProject
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("MyHCLLogin", Description="\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-        "f two numbers", SourceFile="MyHCLLogin.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("MyHCLLogin", SourceFile="MyHCLLogin.feature", SourceLine=0)]
     public partial class MyHCLLoginFeature
     {
         
@@ -31,8 +30,7 @@ namespace SpecFlowProject
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "MyHCLLogin", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "MyHCLLogin", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,39 +61,37 @@ namespace SpecFlowProject
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("validate Login", new string[] {
-                "mytag"}, SourceLine=6)]
-        public virtual void ValidateLogin()
+        [TechTalk.SpecRun.ScenarioAttribute("MyHCLLogin", SourceLine=2)]
+        public virtual void MyHCLLogin()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("validate Login", new string[] {
-                        "mytag"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("MyHCLLogin", ((string[])(null)));
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.Given("I enter url in Browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 4
+   testRunner.Given("I enter url in Browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "UserName"});
             table1.AddRow(new string[] {
                         "bandana.m"});
-#line 9
- testRunner.Then("I enter UserName in username field", ((string)(null)), table1, "Then ");
+#line 5
+   testRunner.Then("I enter UserName in username field", ((string)(null)), table1, "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Password"});
             table2.AddRow(new string[] {
                         "Ganesh@04"});
-#line 12
- testRunner.Then("I enter Password in password field", ((string)(null)), table2, "Then ");
+#line 8
+   testRunner.Then("I enter Password in password field", ((string)(null)), table2, "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "Domain"});
             table3.AddRow(new string[] {
                         "HCLTECH"});
-#line 15
-     testRunner.Then("I select Domain from domain dropdown", ((string)(null)), table3, "Then ");
-#line 18
- testRunner.Then("Click submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 11
+       testRunner.Then("I select Domain from domain dropdown", ((string)(null)), table3, "Then ");
+#line 14
+   testRunner.Then("Click submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
